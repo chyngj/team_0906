@@ -23,8 +23,8 @@ DB구축
         id			varchar(10),   /* customer ID */
         name 		varchar(18),   /* customer name */
         gender 		varchar(3),    /* customer gender*/
-        email 		varchar(30),   /* customer e-mail */
-        birthYear   varchar(4)     /* customer bitthYear */
+        email       varchar(30),   /* customer e-mail */
+        birthYear       varchar(4)     /* customer bitthYear */
     </code></pre>
 
 
