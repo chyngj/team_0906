@@ -17,14 +17,14 @@ DB구축
     DB user pw : 88Einstein$
 
     Database name : team0906
-    <pre><code>{    
+    <pre><code>   
         DB table name : customer
 
         id			varchar(10),   /* customer ID */
         name 		varchar(18),   /* customer name */
         gender 		varchar(3),    /* customer gender*/
         email 		varchar(30),   /* customer e-mail */
-        birthYear   varchar(4)     /* customer bitthYear */}
+        birthYear   varchar(4)     /* customer bitthYear */
     </code></pre>
 
 
