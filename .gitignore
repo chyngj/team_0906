@@ -4,3 +4,4 @@
 /fetchall.py
 /fetchone.py
 /fetchmany.py
+/.gitignore
