@@ -16,6 +16,14 @@ DB구축
     DB user id : test
     DB user pw : 88Einstein$
 
+    Database name : team0906
+    DB table name : customer
+    
+            table_col:   name
+            table_col:   gender
+            table_col:   email
+            table_col:   birthYear
+
 
 
 4. 어떻게 분담할 것인가?: c:김동영 님 r: 최영주 님 u: 권윤우 님 d: 김형철 님
