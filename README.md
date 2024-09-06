@@ -21,11 +21,11 @@ DB구축
     DB table name : customer
  <pre>
  <code>   
-	id         varchar(10),	/* customer ID */
+	id         	varchar(10),	/* customer ID */
 	name		varchar(18),	/* customer name */
-	gender		varchar(3), /* customer gender*/
+	gender		varchar(3), 	/* customer gender*/
 	email		varchar(30),	/* customer e-mail */
-	birthYear       varchar(4)  /* customer bitthYear */
+	birthYear       varchar(4)  	/* customer bitthYear */
  </pre>
  </code> 
 
