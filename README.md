@@ -18,7 +18,7 @@ DB구축
 
     Database name : team0906
     DB table name : customer
-    
+            id          varchar(10),   /* cutomer id */
            	name 		varchar(18),   /* customer name */
             gender 		varchar(3),    /* customer gender*/
             email 		varchar(30),   /* customer e-mail */
