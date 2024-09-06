@@ -18,11 +18,11 @@ DB구축
 
     Database name : team0906
     DB table name : customer
-        id          varchar(10) /* cutomer id */
-        name 	    varchar(18) /* customer name */
-        gender      varchar(3)  /* customer gender*/
-        email       varchar(30) /* customer e-mail */
-        birthYear   varchar(4)  /* customer bitthYear */
+        id			varchar(10),   /* customer ID */
+        name 		varchar(18),   /* customer name */
+        gender 		varchar(3),    /* customer gender*/
+        email 		varchar(30),   /* customer e-mail */
+        birthYear   varchar(4)     /* customer bitthYear */
 
 
 4. 어떻게 분담할 것인가?: c:김동영 님 r: 최영주 님 u: 권윤우 님 d: 김형철 님
