@@ -17,7 +17,7 @@ DB구축
     DB user pw : 88Einstein$
 
     Database name : team0906
-
+-   **** DB connection은  창조관 303호실에서는 가능합니다. 
     DB table name : customer
  <pre>
  <code>   
