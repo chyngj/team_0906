@@ -24,14 +24,6 @@ DB구축
         email 		varchar(30),   /* customer e-mail */
         birthYear   varchar(4)     /* customer bitthYear */
 
-create table	customer(
-	id			varchar(10),   /* customer ID */
-	name 		varchar(18),   /* customer name */
-    gender 		varchar(3),    /* customer gender*/
-    email 		varchar(30),   /* customer e-mail */
-    birthYear   varchar(4)     /* customer bitthYear */
-);
-
 4. 어떻게 분담할 것인가?: c:김동영 님 r: 최영주 님 u: 권윤우 님 d: 김형철 님
 5. 데이터베이스 만드는것: 김형철 님
 6. 고객관리에 대한 테이블 명과 데이터 정리하기: 고객, 
