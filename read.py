@@ -1,40 +1,37 @@
 import mysql.connector
-from config import read_config
+from mysql.connector import Error
 
-def read_customers():
-    # 설정 파일에서 데이터베이스 설정 읽기
-    config = read_config()
-
-    # 고객 데이터를 가져오는 SQL 쿼리
-    query = "SELECT * FROM customers"
-
+# 데이터베이스 연결하는 함수
+def create_connection(host_name, user_name, user_password, db_name):
+    connection = None
     try:
-        # 데이터베이스 연결 설정
-        conn = mysql.connector.connect(**config)
+        connection = mysql.connector.connect(
+            host=host_name,
+            user=user_name,
+            password=user_password,
+            database=db_name
+        )
+        if connection.is_connected():
+            print(f"Connected to MySQL database '{db_name}' at {host_name}")
+    except Error as e:
+        print(f"Error: '{e}'")
+    return connection
+
+# 데이터베이스에서 customer 테이블의 데이터를 읽는 함수
+def read_all_customers(conn):
+    query = "SELECT * FROM customer"  # 'customer' 테이블의 모든 데이터를 가져오는 쿼리
+    return read_data(conn, query)
+
+# 데이터베이스에서 데이터를 읽는 함수
+def read_data(conn, query):
+    try:
         cursor = conn.cursor()
-
-        # 쿼리 실행
         cursor.execute(query)
+        result = cursor.fetchall()  # 모든 결과를 리스트로 가져옴
+        return result
+    except Error as e:
+        print(f"Error reading data: {e}")
+        return []
 
-        # 쿼리 결과에서 모든 행 가져오기
-        result = cursor.fetchall()
 
-        # 결과가 있는지 확인
-        if result:
-            # 각 고객 레코드 출력
-            for row in result:
-                print(row)
-        else:
-            print("고객 데이터를 찾을 수 없습니다.")
-
-    except mysql.connector.Error as e:
-        print(f"오류: {e}")
-    
-    finally:
-        cursor.close()
-        conn.close()
-
-# 사용 예시
-if __name__ == '__main__':
-    read_customers()
 
