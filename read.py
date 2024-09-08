@@ -33,22 +33,5 @@ def read_data(conn, query):
         print(f"Error reading data: {e}")
         return []
 
-# 데이터베이스 사용
-if __name__ == "__main__":
-    mysql_host = "192.168.0.92"  # MySQL 서버 IP
-    mysql_user = "test"          # MySQL 사용자 이름
-    mysql_password = "88Einstein$"  # MySQL 비밀번호
-    mysql_database = "team0906"  # 사용할 데이터베이스 이름
 
-    # 데이터베이스 연결
-    connection = create_connection(mysql_host, mysql_user, mysql_password, mysql_database)
-    
-    if connection:
-        # 고객 데이터 읽기
-        customers = read_all_customers(connection)
-        print("Customers:")
-        for customer in customers:
-            print(customer)
-        
-        # 연결 종료
-        connection.close()
+
