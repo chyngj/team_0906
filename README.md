@@ -14,7 +14,7 @@ DB구축
 3. 어떤 DB를 구축할 것인가?: 고객관리
     DB ip address: 192.168.0.92
     DB user id : test
-    DB user pw : 88Einstein$
+    DB user pw : #######
 
     Database name : team0906
 -   **** DB connection은  창조관 303호실 수업 중에서는 가능합니다. 
